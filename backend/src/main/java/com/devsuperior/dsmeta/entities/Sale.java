@@ -8,6 +8,15 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
 @Entity
 @Table(name = "tb_sales")
 public class Sale {
@@ -65,6 +74,8 @@ public class Sale {
 		return "Sale [id=" + id + ", sellerName=" + sellerName + ", visited=" + visited + ", deals=" + deals
 				+ ", amount=" + amount + ", date=" + date + "]";
 	}
+	
+	
 	
 	
 	
